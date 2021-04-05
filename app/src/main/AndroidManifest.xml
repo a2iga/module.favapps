@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.rx1310.a2iga.module.favapps">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/module_name"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="true">
+
+        <activity
+            android:noHistory="true" 
+            android:excludeFromRecents="true" 
+            android:finishOnCloseSystemDialogs="true" 
+            android:launchMode="singleInstance" 
+            android:name=".LaunchModule"
+            android:label="@string/activity_main">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ModuleSettingsActivity"
+            android:label="@string/activity_settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <!--category android:name="android.intent.category.LAUNCHER"/-->
+            </intent-filter>
+        </activity>
+
+        <meta-data
+          android:name="android.max_aspect"
+          android:value="4.0"/>
+
+    </application>
+
+</manifest>

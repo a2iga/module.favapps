@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="module_name">FavApps</string>
+    
+    <string name="activity_main">Избранные</string>
+    <string name="activity_settings">Настройки модуля</string>
+    
+    <string name="pref_pkg_ctg">Package Name</string>
+    <string name="pref_pkg_app1">Ячейка 1</string>
+    <string name="pref_pkg_app2">Ячейка 2</string>
+    <string name="pref_pkg_app3">Ячейка 3</string>
+    <string name="pref_pkg_app4">Ячейка 4</string>
+    
+</resources>
