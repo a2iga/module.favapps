@@ -3,7 +3,9 @@
 	
 	<style 
 		name="AppTheme" 
-		parent="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+		parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
 		
 </resources>
 
