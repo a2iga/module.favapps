@@ -6,10 +6,13 @@
     <string name="activity_main">Избранные</string>
     <string name="activity_settings">Настройки модуля</string>
     
-    <string name="pref_pkg_ctg">Package Name</string>
-    <string name="pref_pkg_app1">Ячейка 1</string>
-    <string name="pref_pkg_app2">Ячейка 2</string>
-    <string name="pref_pkg_app3">Ячейка 3</string>
-    <string name="pref_pkg_app4">Ячейка 4</string>
+    <string name="cell">Ячейка</string>
+    
+    <string-array name="fc_items">
+        <item>Ячейка 1</item>
+        <item>Ячейка 2</item>
+        <item>Ячейка 3</item>
+        <item>Ячейка 4</item>
+    </string-array>
     
 </resources>

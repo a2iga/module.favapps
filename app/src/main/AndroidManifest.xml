@@ -15,7 +15,7 @@
             android:excludeFromRecents="true" 
             android:finishOnCloseSystemDialogs="true" 
             android:launchMode="singleInstance" 
-            android:name=".LaunchModule"
+            android:name=".ModuleLaunch"
             android:label="@string/activity_main">
 
             <intent-filter>
@@ -26,13 +26,24 @@
         </activity>
 
         <activity
-            android:name=".ModuleSettingsActivity"
+            android:name=".ModuleSettings"
             android:label="@string/activity_settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <!--category android:name="android.intent.category.LAUNCHER"/-->
             </intent-filter>
+            
+            <intent-filter>
+
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+
+            </intent-filter>
+            
         </activity>
 
         <meta-data
