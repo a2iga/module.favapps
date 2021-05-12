@@ -8,8 +8,10 @@
     
     <string name="cell">Ячейка</string>
 	
-	<string name="cell_added">Ячейка записана</string>
-	<string name="cell_deleted">Ячейка удалена</string>
+	<string name="cell_write">Записать ячейку</string>
+	<string name="cell_writed">Ячейка записана</string>
+	<string name="cell_clean">Стереть ячейку</string>
+	<string name="cell_cleaned">Ячейка стёрта</string>
 	
     <string name="show_icons">Иконки приложений</string>
 	<string name="show_icons_desc">Отображать иконки приложений в меню «Избранные»?</string>

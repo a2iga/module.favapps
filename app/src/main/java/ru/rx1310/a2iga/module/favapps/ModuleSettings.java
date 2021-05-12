@@ -79,8 +79,8 @@ public class ModuleSettings extends PreferenceActivity {
         
         String title;
         
-        if (fillCell) title = "Записать ячейку";
-        else title = "Стереть ячейку";
+        if (fillCell) title = getString(R.string.cell_write);
+        else title = getString(R.string.cell_clean);
         
         AlertDialog.Builder b = new AlertDialog.Builder(ModuleSettings.this);
         
@@ -93,10 +93,10 @@ public class ModuleSettings extends PreferenceActivity {
                 
                 if (fillCell) {
 					updateCell("k" + p, pn);
-					Toast.makeText(ModuleSettings.this, R.string.cell_added, Toast.LENGTH_SHORT).show();
+					Toast.makeText(ModuleSettings.this, R.string.cell_writed, Toast.LENGTH_SHORT).show();
 				} else {
 					updateCell("k" + p, null);
-					Toast.makeText(ModuleSettings.this, R.string.cell_deleted, Toast.LENGTH_SHORT).show();
+					Toast.makeText(ModuleSettings.this, R.string.cell_cleaned, Toast.LENGTH_SHORT).show();
 				}
 					
             }
