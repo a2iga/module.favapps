@@ -14,6 +14,7 @@ import android.widget.ListView;
 import ru.rx1310.a2iga.module.favapps.R;
 import ru.rx1310.a2iga.module.favapps.utils.SharedPrefUtils;
 import android.widget.Toast;
+import android.preference.SwitchPreference;
 
 public class ModuleSettings extends PreferenceActivity {
 
@@ -21,6 +22,7 @@ public class ModuleSettings extends PreferenceActivity {
 
     PreferenceScreen ps;
     Preference cleanCell;
+	SwitchPreference showIcons;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +36,15 @@ public class ModuleSettings extends PreferenceActivity {
         cleanCell.setTitle("Удалить ячейки");
         cleanCell.setKey("CLEAN_CELL");
         
+		showIcons = new SwitchPreference(this);
+		showIcons.setTitle(R.string.show_icons);
+		showIcons.setSummary(R.string.show_icons_desc);
+		showIcons.setKey("SHOW_ICONS");
+		
         setPreferenceScreen(ps);
         
         ps.addPreference(cleanCell);
+		ps.addPreference(showIcons);
 
         // Получение Package Name от A2IGA
         String ia = i.getAction();

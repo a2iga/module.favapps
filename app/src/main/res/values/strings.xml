@@ -7,6 +7,12 @@
     <string name="activity_settings">Настройки модуля</string>
     
     <string name="cell">Ячейка</string>
+	
+	<string name="cell_added">Ячейка записана</string>
+	<string name="cell_deleted">Ячейка удалена</string>
+	
+    <string name="show_icons">Иконки приложений</string>
+	<string name="show_icons_desc">Отображать иконки приложений в меню «Избранные»?</string>
     
     <string-array name="fc_items">
         <item>Ячейка 1</item>

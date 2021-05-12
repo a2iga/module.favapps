@@ -18,11 +18,14 @@ public class ModuleLaunch extends PreferenceActivity {
     PreferenceScreen ps;
     Preference c0, c1, c2, c3;
     String ck0, ck1, ck2, ck3;
+	boolean showIcons;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
+		showIcons = SharedPrefUtils.getBooleanData(this, "SHOW_ICONS");
+		
         // Cell Pref Keys (CK)
         ck0 = SharedPrefUtils.getStringData(this, "k0");
         ck1 = SharedPrefUtils.getStringData(this, "k1");
@@ -48,6 +51,14 @@ public class ModuleLaunch extends PreferenceActivity {
         c3.setTitle(AppUtils.getAppName(this, ck3));
         c3.setSummary(cellSummary(4));
         
+		if (showIcons) {
+			c0.setIcon(AppUtils.getAppIcon(this, ck0));
+			c1.setIcon(AppUtils.getAppIcon(this, ck1));
+			c2.setIcon(AppUtils.getAppIcon(this, ck2));
+			c3.setIcon(AppUtils.getAppIcon(this, ck3));
+			
+		}
+		
         setPreferenceScreen(ps);
         
         if (ck0 != null) ps.addPreference(c0);
