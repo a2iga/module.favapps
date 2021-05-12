@@ -56,7 +56,6 @@ public class ModuleLaunch extends PreferenceActivity {
 			c1.setIcon(AppUtils.getAppIcon(this, ck1));
 			c2.setIcon(AppUtils.getAppIcon(this, ck2));
 			c3.setIcon(AppUtils.getAppIcon(this, ck3));
-			
 		}
 		
         setPreferenceScreen(ps);

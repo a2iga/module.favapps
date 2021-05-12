@@ -15,6 +15,7 @@ import ru.rx1310.a2iga.module.favapps.R;
 import ru.rx1310.a2iga.module.favapps.utils.SharedPrefUtils;
 import android.widget.Toast;
 import android.preference.SwitchPreference;
+import ru.rx1310.a2iga.module.favapps.utils.AppUtils;
 
 public class ModuleSettings extends PreferenceActivity {
 
@@ -90,9 +91,14 @@ public class ModuleSettings extends PreferenceActivity {
             
             public void onClick(DialogInterface d, int p) {
                 
-                if (fillCell) updateCell("k" + p, pn);
-                else updateCell("k" + p, null);
-                
+                if (fillCell) {
+					updateCell("k" + p, pn);
+					Toast.makeText(ModuleSettings.this, R.string.cell_added, Toast.LENGTH_SHORT).show();
+				} else {
+					updateCell("k" + p, null);
+					Toast.makeText(ModuleSettings.this, R.string.cell_deleted, Toast.LENGTH_SHORT).show();
+				}
+					
             }
              
         });
