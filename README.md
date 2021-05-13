@@ -1,8 +1,24 @@
 # FavApps Module for A2IGA
+<div>
+  <p>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=a2iga.module.favapps">
+    <a href="https://github.com/a2iga/module.favapps/releases"><img src="https://img.shields.io/github/v/release/a2iga/module.favapps"></a>
+    <img src="https://img.shields.io/github/downloads/a2iga/module.favapps/total">
+    <img src="https://img.shields.io/github/languages/code-size/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/repo-size/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/languages/count/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/languages/top/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/stars/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/watchers/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/forks/a2iga/module.favapps">
+    <img src="https://img.shields.io/github/release-date/a2iga/module.favapps">
+    <a href="https://github.com/rx1310/module.favapps/commits/master"><img src="https://img.shields.io/github/last-commit/a2iga/module.favapps"></a>
+  </p>
+</div>
 FavApps - это модуль, который при запуске выводит на экран пользователя небольшое модальное окно со списком избранных приложений.
 
 ## Скачать и установить модуль
-Скачать последнюю версию модуля можно по [этой](https://github.com/a2iga/a2iga/releases/latest) ссылке. После загрузки модуля необходимо установить его как обычный APK-файл.
+Скачать последнюю версию модуля можно по [этой](https://github.com/a2iga/module.favapps/releases/latest) ссылке. После загрузки модуля необходимо установить его как обычный APK-файл.
 
 ## Установка в A2IGA
 **A2IGA уже должен быть установлен на устройтсво!**
